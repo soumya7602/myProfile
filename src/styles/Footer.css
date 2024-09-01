@@ -1,0 +1,51 @@
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #89896d4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    bottom: 0;
+}
+.footer-text{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: monospace;
+     color: #fff;
+     align-items: center;
+
+}
+.footer-text:hover {
+    color: #ffcc00; /* Example of hover color change */
+    animation: textGlow 0.5s ease-in-out forwards;
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0 0 10px #bcb598, 0 0 20px #ceba69;
+    }
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+    .icons img {
+        padding: 10px;
+        transition: transform 0.3s ease-in-out; 
+    }
+    
+    .icons img:hover {
+        transform: scale(1.5); 
+    }
+

@@ -1,0 +1,131 @@
+/* Global container and border styling */
+.project-container {
+  width: 100%;
+  height: auto;
+  
+  border-bottom: 1px solid #262626; /* Equivalent to border-b border-neutral-900 */
+  padding-bottom: 1rem; /* Equivalent to pb-4 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1d1de2;
+}
+.project-cont{
+  margin-top: 60px;
+}
+/* Project title styling */
+.project-title {
+  margin: 2rem 0; /* Equivalent to my-20 */
+  text-align: center; /* Equivalent to text-center */
+  font-size: 3.5rem; /* Equivalent to text-4xl */
+  opacity: 0;
+  font-weight: 700;
+  color: rgb(248, 242, 242);
+  transform: translateY(-100px);
+  animation: fadeInDown 1.4s forwards;
+  padding-bottom: 25px;
+  border-bottom: #9ca3af 1px solid;
+ 
+}
+.project-body{
+  width: 100%;
+  height: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+/* Project item flexbox styling */
+.project-item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem; /* Equivalent to mb-8 */
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Project image styling */
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* Equivalent to lg:w-1/4 */
+  margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: fadeInLeft 1.8s forwards;
+}
+
+
+.project-image img{
+  padding: 10px;
+  width: 55%;
+  height: 55%;
+   border-radius: 10%;
+}
+/* Project details styling */
+.project-details {
+  width: 100%;
+  max-width: 75%; /* Equivalent to lg:w-3/4 */
+  opacity: 0;
+ 
+  transform: translateX(100px);
+  animation: fadeInRight 1.2s forwards;
+}
+
+h6 {
+  margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+  font-weight: 600; /* Equivalent to font-semibold */
+  font-size: 1.2rem;
+  color: white;
+}
+
+p.text-neutral-400 {
+  margin-bottom: 1rem; /* Equivalent to mb-4 */
+  color: #9ca3af; /* Equivalent to text-neutral-400 */
+}
+
+/* Technology badge styling */
+.project-tech {
+  margin-right: 0.5rem; /* Equivalent to mr-2 */
+  border-radius: 0.25rem; /* Equivalent to rounded */
+  background-color: #262626; /* Equivalent to bg-neutral-900 */
+  padding: 0.25rem 0.5rem; /* Equivalent to px-2 py-1 */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  font-weight: 500; /* Equivalent to font-medium */
+  color: #6b21a8; /* Equivalent to text-purple-800 */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+

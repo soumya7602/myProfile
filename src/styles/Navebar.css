@@ -1,0 +1,175 @@
+.Navbar {
+    width: 100%;
+    height: 60px;
+    /* padding: 10px 20px;  */
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f3f3f500;
+    
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    align-items: center;
+}
+/*
+.NavbarP {
+    display: flex; 
+    gap: 20px; 
+    margin-right: 30px;
+}
+.NavbarP p {
+    text-decoration: none;
+    color: #a29a9a; 
+    padding: 10px;
+    padding-right: 10px; 
+    font-size: 2rem; 
+    cursor: pointer; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    animation: slideIn 0.8s ease-out forwards;
+} */
+
+/* .active p {
+    color: #dad3d3; /* Change to your desired active color 
+    font-size: 1.6rem;  /*Increase font size when active 
+}
+
+
+
+
+/* 2 */
+
+.navbar {
+    display: flex;
+
+}
+
+.Navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-right: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #a29a9a;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 650;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #e2dfdf;
+    transform: scale(1.2);
+}
+
+
+
+.nave-box{
+    font-size: 45px;
+    justify-content: center;
+    color: rgb(159, 164, 168);
+    display: none;
+    padding-right: 20px;
+}
+
+
+
+
+
+/*  side bar desine     */
+
+
+@keyframes downIn{
+    from{ 
+    transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+}
+}
+@keyframes startIn{
+    from{ 
+        transform: translateX(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+    }
+}
+
+.sidebar {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #26252b6e;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+    display: block;
+    transform: translateX(0);
+}
+
+.sidebar-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    animation: downIn 1.8s forwards;
+}
+
+.sidebar-body ul li {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.1rem;
+    justify-content: flex-start;
+    padding: 15px;
+    padding-left: 40px;
+    animation: startIn 1.8s forwards;
+}
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #8a8282;
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+    .nave-box {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+     .sidebar{
+        display: block;
+     }
+}
